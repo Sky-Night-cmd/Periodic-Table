@@ -1,175 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Periodic Table</title>
+  <meta charset="UTF-8">
+  <title>Periodic Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 32px;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 20px auto;
+      width: auto;
+    }
+
+    td {
+      border: 1px solid #999;
+      width: 60px;
+      height: 65px;
+      text-align: center;
+      vertical-align: top;
+      padding: 4px;
+      font-size: 12px;
+      background-color: #fff;
+    }
+
+    td strong {
+      display: block;
+      font-size: 16px;
+      margin: 4px 0;
+    }
+
+    td small {
+      display: block;
+      font-size: 10px;
+    }
+
+    .empty {
+      border: none;
+      background: transparent;
+    }
+
+    .label {
+      border: none;
+      text-align: left;
+      font-weight: bold;
+      padding-left: 10px;
+      background: transparent;
+    }
+  </style>
 </head>
 <body>
 
-    <h1 align="center">Periodic Table of the Elements</h1>
+  <h1>The Periodic Table</h1>
 
-    <table border="1" cellspacing="0" cellpadding="5" align="center">
-        <colgroup>
-            <col span="1" />
-            <col span="16" />
-            <col span="1" />
-        </colgroup>
-        <tbody>
-            <tr>
-                <td>1<br><strong>H</strong><br>1.008</td>
-                <td colspan="16"></td>
-                <td>2<br><strong>He</strong><br>4.0026</td>
-            </tr>
-            <tr>
-                <td>3<br><strong>Li</strong><br>6.94</td>
-                <td>4<br><strong>Be</strong><br>9.0122</td>
-                <td colspan="10"></td>
-                <td>5<br><strong>B</strong><br>10.81</td>
-                <td>6<br><strong>C</strong><br>12.011</td>
-                <td>7<br><strong>N</strong><br>14.007</td>
-                <td>8<br><strong>O</strong><br>15.999</td>
-                <td>9<br><strong>F</strong><br>18.998</td>
-                <td>10<br><strong>Ne</strong><br>20.180</td>
-            </tr>
-            <tr>
-                <td>11<br><strong>Na</strong><br>22.990</td>
-                <td>12<br><strong>Mg</strong><br>24.305</td>
-                <td colspan="10"></td>
-                <td>13<br><strong>Al</strong><br>26.982</td>
-                <td>14<br><strong>Si</strong><br>28.085</td>
-                <td>15<br><strong>P</strong><br>30.974</td>
-                <td>16<br><strong>S</strong><br>32.06</td>
-                <td>17<br><strong>Cl</strong><br>35.45</td>
-                <td>18<br><strong>Ar</strong><br>39.948</td>
-            </tr>
-            <tr>
-                <td>19<br><strong>K</strong><br>39.098</td>
-                <td>20<br><strong>Ca</strong><br>40.078</td>
-                <td>21<br><strong>Sc</strong><br>44.956</td>
-                <td>22<br><strong>Ti</strong><br>47.867</td>
-                <td>23<br><strong>V</strong><br>50.942</td>
-                <td>24<br><strong>Cr</strong><br>51.996</td>
-                <td>25<br><strong>Mn</strong><br>54.938</td>
-                <td>26<br><strong>Fe</strong><br>55.845</td>
-                <td>27<br><strong>Co</strong><br>58.933</td>
-                <td>28<br><strong>Ni</strong><br>58.693</td>
-                <td>29<br><strong>Cu</strong><br>63.546</td>
-                <td>30<br><strong>Zn</strong><br>65.38</td>
-                <td>31<br><strong>Ga</strong><br>69.723</td>
-                <td>32<br><strong>Ge</strong><br>72.630</td>
-                <td>33<br><strong>As</strong><br>74.922</td>
-                <td>34<br><strong>Se</strong><br>78.971</td>
-                <td>35<br><strong>Br</strong><br>79.904</td>
-                <td>36<br><strong>Kr</strong><br>83.798</td>
-            </tr>
-            <tr>
-                <td>37<br><strong>Rb</strong><br>85.468</td>
-                <td>38<br><strong>Sr</strong><br>87.62</td>
-                <td>39<br><strong>Y</strong><br>88.906</td>
-                <td>40<br><strong>Zr</strong><br>91.224</td>
-                <td>41<br><strong>Nb</strong><br>92.906</td>
-                <td>42<br><strong>Mo</strong><br>95.95</td>
-                <td>43<br><strong>Tc</strong><br>(98)</td>
-                <td>44<br><strong>Ru</strong><br>101.07</td>
-                <td>45<br><strong>Rh</strong><br>102.91</td>
-                <td>46<br><strong>Pd</strong><br>106.42</td>
-                <td>47<br><strong>Ag</strong><br>107.87</td>
-                <td>48<br><strong>Cd</strong><br>112.41</td>
-                <td>49<br><strong>In</strong><br>114.82</td>
-                <td>50<br><strong>Sn</strong><br>118.71</td>
-                <td>51<br><strong>Sb</strong><br>121.76</td>
-                <td>52<br><strong>Te</strong><br>127.60</td>
-                <td>53<br><strong>I</strong><br>126.90</td>
-                <td>54<br><strong>Xe</strong><br>131.29</td>
-            </tr>
-            <tr>
-                <td>55<br><strong>Cs</strong><br>132.91</td>
-                <td>56<br><strong>Ba</strong><br>137.33</td>
-                <td>57<br><strong>La</strong><br>138.91</td>
-                <td>72<br><strong>Hf</strong><br>178.49</td>
-                <td>73<br><strong>Ta</strong><br>180.95</td>
-                <td>74<br><strong>W</strong><br>183.84</td>
-                <td>75<br><strong>Re</strong><br>186.21</td>
-                <td>76<br><strong>Os</strong><br>190.23</td>
-                <td>77<br><strong>Ir</strong><br>192.22</td>
-                <td>78<br><strong>Pt</strong><br>195.08</td>
-                <td>79<br><strong>Au</strong><br>196.97</td>
-                <td>80<br><strong>Hg</strong><br>200.59</td>
-                <td>81<br><strong>Tl</strong><br>204.38</td>
-                <td>82<br><strong>Pb</strong><br>207.2</td>
-                <td>83<br><strong>Bi</strong><br>208.98</td>
-                <td>84<br><strong>Po</strong><br>(209)</td>
-                <td>85<br><strong>At</strong><br>(210)</td>
-                <td>86<br><strong>Rn</strong><br>(222)</td>
-            </tr>
-            <tr>
-                <td>87<br><strong>Fr</strong><br>(223)</td>
-                <td>88<br><strong>Ra</strong><br>(226)</td>
-                <td>89<br><strong>Ac</strong><br>(227)</td>
-                <td>104<br><strong>Rf</strong><br>(267)</td>
-                <td>105<br><strong>Db</strong><br>(270)</td>
-                <td>106<br><strong>Sg</strong><br>(271)</td>
-                <td>107<br><strong>Bh</strong><br>(270)</td>
-                <td>108<br><strong>Hs</strong><br>(277)</td>
-                <td>109<br><strong>Mt</strong><br>(276)</td>
-                <td>110<br><strong>Ds</strong><br>(281)</td>
-                <td>111<br><strong>Rg</strong><br>(282)</td>
-                <td>112<br><strong>Cn</strong><br>(285)</td>
-                <td>113<br><strong>Nh</strong><br>(286)</td>
-                <td>114<br><strong>Fl</strong><br>(289)</td>
-                <td>115<br><strong>Mc</strong><br>(290)</td>
-                <td>116<br><strong>Lv</strong><br>(293)</td>
-                <td>117<br><strong>Ts</strong><br>(294)</td>
-                <td>118<br><strong>Og</strong><br>(294)</td>
-            </tr>
-        </tbody>
-    </table>
+  <table>
+    <!-- Period 1 -->
+    <tr>
+      <td><small>1</small><strong>H</strong><small>1.008</small></td>
+      <td class="empty" colspan="16"></td>
+      <td><small>2</small><strong>He</strong><small>4.0026</small></td>
+    </tr>
 
-    <h2 align="center">Lanthanides</h2>
-    <table border="1" cellspacing="0" cellpadding="5" align="center">
-        <tbody>
-            <tr>
-                <td>57<br><strong>La</strong><br>138.91</td>
-                <td>58<br><strong>Ce</strong><br>140.12</td>
-                <td>59<br><strong>Pr</strong><br>140.91</td>
-                <td>60<br><strong>Nd</strong><br>144.24</td>
-                <td>61<br><strong>Pm</strong><br>(145)</td>
-                <td>62<br><strong>Sm</strong><br>150.36</td>
-                <td>63<br><strong>Eu</strong><br>151.96</td>
-                <td>64<br><strong>Gd</strong><br>157.25</td>
-                <td>65<br><strong>Tb</strong><br>158.93</td>
-                <td>66<br><strong>Dy</strong><br>162.50</td>
-                <td>67<br><strong>Ho</strong><br>164.93</td>
-                <td>68<br><strong>Er</strong><br>167.26</td>
-                <td>69<br><strong>Tm</strong><br>168.93</td>
-                <td>70<br><strong>Yb</strong><br>173.04</td>
-                <td>71<br><strong>Lu</strong><br>174.97</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Period 2 -->
+    <tr>
+      <td><small>3</small><strong>Li</strong><small>6.94</small></td>
+      <td><small>4</small><strong>Be</strong><small>9.0122</small></td>
+      <td class="empty" colspan="10"></td>
+      <td><small>5</small><strong>B</strong><small>10.81</small></td>
+      <td><small>6</small><strong>C</strong><small>12.011</small></td>
+      <td><small>7</small><strong>N</strong><small>14.007</small></td>
+      <td><small>8</small><strong>O</strong><small>15.999</small></td>
+      <td><small>9</small><strong>F</strong><small>18.998</small></td>
+      <td><small>10</small><strong>Ne</strong><small>20.180</small></td>
+    </tr>
 
-    <h2 align="center">Actinides</h2>
-    <table border="1" cellspacing="0" cellpadding="5" align="center">
-        <tbody>
-            <tr>
-                <td>89<br><strong>Ac</strong><br>(227)</td>
-                <td>90<br><strong>Th</strong><br>232.04</td>
-                <td>91<br><strong>Pa</strong><br>231.04</td>
-                <td>92<br><strong>U</strong><br>238.03</td>
-                <td>93<br><strong>Np</strong><br>(237)</td>
-                <td>94<br><strong>Pu</strong><br>(244)</td>
-                <td>95<br><strong>Am</strong><br>(243)</td>
-                <td>96<br><strong>Cm</strong><br>(247)</td>
-                <td>97<br><strong>Bk</strong><br>(247)</td>
-                <td>98<br><strong>Cf</strong><br>(251)</td>
-                <td>99<br><strong>Es</strong><br>(252)</td>
-                <td>100<br><strong>Fm</strong><br>(257)</td>
-                <td>101<br><strong>Md</strong><br>(258)</td>
-                <td>102<br><strong>No</strong><br>(259)</td>
-                <td>103<br><strong>Lr</strong><br>(262)</td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- Period 3 -->
+    <tr>
+      <td><small>11</small><strong>Na</strong><small>22.990</small></td>
+      <td><small>12</small><strong>Mg</strong><small>24.305</small></td>
+      <td class="empty" colspan="10"></td>
+      <td><small>13</small><strong>Al</strong><small>26.982</small></td>
+      <td><small>14</small><strong>Si</strong><small>28.085</small></td>
+      <td><small>15</small><strong>P</strong><small>30.974</small></td>
+      <td><small>16</small><strong>S</strong><small>32.06</small></td>
+      <td><small>17</small><strong>Cl</strong><small>35.45</small></td>
+      <td><small>18</small><strong>Ar</strong><small>39.948</small></td>
+    </tr>
 
+    <!-- Period 4 -->
+    <tr>
+      <td><small>19</small><strong>K</strong><small>39.098</small></td>
+      <td><small>20</small><strong>Ca</strong><small>40.078</small></td>
+      <td><small>21</small><strong>Sc</strong><small>44.956</small></td>
+      <td><small>22</small><strong>Ti</strong><small>47.867</small></td>
+      <td><small>23</small><strong>V</strong><small>50.942</small></td>
+      <td><small>24</small><strong>Cr</strong><small>51.996</small></td>
+      <td><small>25</small><strong>Mn</strong><small>54.938</small></td>
+      <td><small>26</small><strong>Fe</strong><small>55.845</small></td>
+      <td><small>27</small><strong>Co</strong><small>58.933</small></td>
+      <td><small>28</small><strong>Ni</strong><small>58.693</small></td>
+      <td><small>29</small><strong>Cu</strong><small>63.546</small></td>
+      <td><small>30</small><strong>Zn</strong><small>65.38</small></td>
+      <td><small>31</small><strong>Ga</strong><small>69.723</small></td>
+      <td><small>32</small><strong>Ge</strong><small>72.63</small></td>
+      <td><small>33</small><strong>As</strong><small>74.922</small></td>
+      <td><small>34</small><strong>Se</strong><small>78.971</small></td>
+      <td><small>35</small><strong>Br</strong><small>79.904</small></td>
+      <td><small>36</small><strong>Kr</strong><small>83.798</small></td>
+    </tr>
+
+    <!-- Period 5 -->
+    <tr>
+      <td><small>37</small><strong>Rb</strong><small>85.468</small></td>
+      <td><small>38</small><strong>Sr</strong><small>87.62</small></td>
+      <td><small>39</small><strong>Y</strong><small>88.906</small></td>
+      <td><small>40</small><strong>Zr</strong><small>91.224</small></td>
+      <td><small>41</small><strong>Nb</strong><small>92.906</small></td>
+      <td><small>42</small><strong>Mo</strong><small>95.95</small></td>
+      <td><small>43</small><strong>Tc</strong><small>(98)</small></td>
+      <td><small>44</small><strong>Ru</strong><small>101.07</small></td>
+      <td><small>45</small><strong>Rh</strong><small>102.91</small></td>
+      <td><small>46</small><strong>Pd</strong><small>106.42</small></td>
+      <td><small>47</small><strong>Ag</strong><small>107.87</small></td>
+      <td><small>48</small><strong>Cd</strong><small>112.41</small></td>
+      <td><small>49</small><strong>In</strong><small>114.82</small></td>
+      <td><small>50</small><strong>Sn</strong><small>118.71</small></td>
+      <td><small>51</small><strong>Sb</strong><small>121.76</small></td>
+      <td><small>52</small><strong>Te</strong><small>127.6</small></td>
+      <td><small>53</small><strong>I</strong><small>126.90</small></td>
+      <td><small>54</small><strong>Xe</strong><small>131.29</small></td>
+    </tr>
+
+    <!-- Period 6 -->
+    <tr>
+      <td><small>55</small><strong>Cs</strong><small>132.91</small></td>
+      <td><small>56</small><strong>Ba</strong><small>137.33</small></td>
+      <td><strong>La-Lu</strong><br><small>57-71</small></td>
+      <td><small>72</small><strong>Hf</strong><small>178.49</small></td>
+      <td><small>73</small><strong>Ta</strong><small>180.95</small></td>
+      <td><small>74</small><strong>W</strong><small>183.84</small></td>
+      <td><small>75</small><strong>Re</strong><small>186.21</small></td>
+      <td><small>76</small><strong>Os</strong><small>190.23</small></td>
+      <td><small>77</small><strong>Ir</strong><small>192.22</small></td>
+      <td><small>78</small><strong>Pt</strong><small>195.08</small></td>
+      <td><small>79</small><strong>Au</strong><small>196.97</small></td>
+      <td><small>80</small><strong>Hg</strong><small>200.59</small></td>
+      <td><small>81</small><strong>Tl</strong><small>204.38</small></td>
+      <td><small>82</small><strong>Pb</strong><small>207.2</small></td>
+      <td><small>83</small><strong>Bi</strong><small>208.98</small></td>
+      <td><small>84</small><strong>Po</strong><small>(209)</small></td>
+      <td><small>85</small><strong>At</strong><small>(210)</small></td>
+      <td><small>86</small><strong>Rn</strong><small>(222)</small></td>
+    </tr>
+
+    <!-- Period 7 -->
+    <tr>
+      <td><small>87</small><strong>Fr</strong><small>(223)</small></td>
+      <td><small>88</small><strong>Ra</strong><small>(226)</small></td>
+      <td><strong>Ac-Lr</strong><br><small>89-103</small></td>
+      <td><small>104</small><strong>Rf</strong><small>(267)</small></td>
+      <td><small>105</small><strong>Db</strong><small>(268)</small></td>
+      <td><small>106</small><strong>Sg</strong><small>(271)</small></td>
+      <td><small>107</small><strong>Bh</strong><small>(272)</small></td>
+      <td><small>108</small><strong>Hs</strong><small>(270)</small></td>
+      <td><small>109</small><strong>Mt</strong><small>(276)</small></td>
+      <td><small>110</small><strong>Ds</strong><small>(281)</small></td>
+      <td><small>111</small><strong>Rg</strong><small>(280)</small></td>
+      <td><small>112</small><strong>Cn</strong><small>(285)</small></td>
+      <td><small>113</small><strong>Nh</strong><small>(284)</small></td>
+      <td><small>114</small><strong>Fl</strong><small>(289)</small></td>
+      <td><small>115</small><strong>Mc</strong><small>(288)</small></td>
+      <td><small>116</small><strong>Lv</strong><small>(293)</small></td>
+      <td><small>117</small><strong>Ts</strong><small>(294)</small></td>
+      <td><small>118</small><strong>Og</strong><small>(294)</small></td>
+    </tr>
+  </table>
+
+  <!-- Lanthanides and Actinides -->
+  <table>
+    <tr>
+      <td class="empty" colspan="2"></td>
+      <td class="label"><h2>Lanthanides</h2></td>
+      <td><small>57</small><strong>La</strong><small>138.91</small></td>
+      <td><small>58</small><strong>Ce</strong><small>140.12</small></td>
+      <td><small>59</small><strong>Pr</strong><small>140.91</small></td>
+      <td><small>60</small><strong>Nd</strong><small>144.24</small></td>
+      <td><small>61</small><strong>Pm</strong><small>(145)</small></td>
+      <td><small>62</small><strong>Sm</strong><small>150.36</small></td>
+      <td><small>63</small><strong>Eu</strong><small>151.96</small></td>
+      <td><small>64</small><strong>Gd</strong><small>157.25</small></td>
+      <td><small>65</small><strong>Tb</strong><small>158.93</small></td>
+      <td><small>66</small><strong>Dy</strong><small>162.50</small></td>
+      <td><small>67</small><strong>Ho</strong><small>164.93</small></td>
+      <td><small>68</small><strong>Er</strong><small>167.26</small></td>
+      <td><small>69</small><strong>Tm</strong><small>168.93</small></td>
+      <td><small>70</small><strong>Yb</strong><small>173.05</small></td>
+      <td><small>71</small><strong>Lu</strong><small>174.97</small></td>
+    </tr>
+
+    <tr>
+      <td class="empty" colspan="2"></td>
+      <td class="label"><h2>Actinides</h2></td>
+      <td><small>89</small><strong>Ac</strong><small>(227)</small></td>
+      <td><small>90</small><strong>Th</strong><small>232.04</small></td>
+      <td><small>91</small><strong>Pa</strong><small>231.04</small></td>
+      <td><small>92</small><strong>U</strong><small>238.03</small></td>
+      <td><small>93</small><strong>Np</strong><small>(237)</small></td>
+      <td><small>94</small><strong>Pu</strong><small>(244)</small></td>
+      <td><small>95</small><strong>Am</strong><small>(243)</small></td>
+      <td><small>96</small><strong>Cm</strong><small>(247)</small></td>
+      <td><small>97</small><strong>Bk</strong><small>(247)</small></td>
+      <td><small>98</small><strong>Cf</strong><small>(251)</small></td>
+      <td><small>99</small><strong>Es</strong><small>(252)</small></td>
+      <td><small>100</small><strong>Fm</strong><small>(257)</small></td>
+      <td><small>101</small><strong>Md</strong><small>(258)</small></td>
+      <td><small>102</small><strong>No</strong><small>(259)</small></td>
+      <td><small>103</small><strong>Lr</strong><small>(262)</small></td>
+    </tr>
+  </table>
 </body>
 </html>
