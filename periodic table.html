@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Periodic Table</title>
@@ -8,7 +9,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
     }
 
     h1 {
@@ -17,6 +17,14 @@
       font-size: 32px;
     }
 
+    .credit {
+      position: absolute;
+      top: 60px;
+      right: 330px;
+      line-height: 1.5;
+    }
+
+
     table {
       border-collapse: collapse;
       margin: 20px auto;
@@ -24,7 +32,7 @@
     }
 
     td {
-      border: 1px solid #999;
+      border: 4px solid black;
       width: 60px;
       height: 65px;
       text-align: center;
@@ -59,11 +67,19 @@
     }
   </style>
 </head>
+
 <body>
 
   <h1>The Periodic Table</h1>
+  <div class="credit">
+    <a href="http://chemistry.about.com">http://chemistry.about.com</a> <br>
+    ©2012 Todd Helmenstine <br>
+    About Chemistry
+  </div>
+
 
   <table>
+    
     <!-- Period 1 -->
     <tr>
       <td><small>1</small><strong>H</strong><small>1.008</small></td>
@@ -145,7 +161,7 @@
     <tr>
       <td><small>55</small><strong>Cs</strong><small>132.91</small></td>
       <td><small>56</small><strong>Ba</strong><small>137.33</small></td>
-      <td><strong>La-Lu</strong><br><small>57-71</small></td>
+      <td><small>57-71</small><strong><br></strong><small>Lanthanides</small></td>
       <td><small>72</small><strong>Hf</strong><small>178.49</small></td>
       <td><small>73</small><strong>Ta</strong><small>180.95</small></td>
       <td><small>74</small><strong>W</strong><small>183.84</small></td>
@@ -167,7 +183,7 @@
     <tr>
       <td><small>87</small><strong>Fr</strong><small>(223)</small></td>
       <td><small>88</small><strong>Ra</strong><small>(226)</small></td>
-      <td><strong>Ac-Lr</strong><br><small>89-103</small></td>
+      <td><small>89-103</small><strong><br></strong><small>Actinides</small></td>
       <td><small>104</small><strong>Rf</strong><small>(267)</small></td>
       <td><small>105</small><strong>Db</strong><small>(268)</small></td>
       <td><small>106</small><strong>Sg</strong><small>(271)</small></td>
@@ -177,12 +193,12 @@
       <td><small>110</small><strong>Ds</strong><small>(281)</small></td>
       <td><small>111</small><strong>Rg</strong><small>(280)</small></td>
       <td><small>112</small><strong>Cn</strong><small>(285)</small></td>
-      <td><small>113</small><strong>Nh</strong><small>(284)</small></td>
+      <td><small>113</small><strong>Uut</strong><small>(284)</small></td>
       <td><small>114</small><strong>Fl</strong><small>(289)</small></td>
-      <td><small>115</small><strong>Mc</strong><small>(288)</small></td>
+      <td><small>115</small><strong>Uup</strong><small>(288)</small></td>
       <td><small>116</small><strong>Lv</strong><small>(293)</small></td>
-      <td><small>117</small><strong>Ts</strong><small>(294)</small></td>
-      <td><small>118</small><strong>Og</strong><small>(294)</small></td>
+      <td><small>117</small><strong>Uus</strong><small>(294)</small></td>
+      <td><small>118</small><strong>Uuo</strong><small>(294)</small></td>
     </tr>
   </table>
 
@@ -190,7 +206,9 @@
   <table>
     <tr>
       <td class="empty" colspan="2"></td>
-      <td class="label"><h2>Lanthanides</h2></td>
+      <td class="label">
+        <h2>Lanthanides</h2>
+      </td>
       <td><small>57</small><strong>La</strong><small>138.91</small></td>
       <td><small>58</small><strong>Ce</strong><small>140.12</small></td>
       <td><small>59</small><strong>Pr</strong><small>140.91</small></td>
@@ -210,7 +228,9 @@
 
     <tr>
       <td class="empty" colspan="2"></td>
-      <td class="label"><h2>Actinides</h2></td>
+      <td class="label">
+        <h2>Actinides</h2>
+      </td>
       <td><small>89</small><strong>Ac</strong><small>(227)</small></td>
       <td><small>90</small><strong>Th</strong><small>232.04</small></td>
       <td><small>91</small><strong>Pa</strong><small>231.04</small></td>
@@ -229,4 +249,5 @@
     </tr>
   </table>
 </body>
+
 </html>
